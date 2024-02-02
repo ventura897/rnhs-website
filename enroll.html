@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enrollment Form - Senior High School</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type=text],
+        input[type=number] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            cursor: pointer;
+        }
+        .warning {
+            color: red;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <form action="thnks.html">
+    <h1>Enrollment Form - Senior High School</h1>
+    <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="contact">Contact Number:</label>
+        <input type="text" id="contact" name="contact" required>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="strand">Strand:</label>
+        <select id="strand" name="strand" required>
+            <option value="">Select a strand</option>
+            <option value="STEM">STEM</option>
+            <option value="HUMMS">HUMMS</option>
+            <option value="GAS">GAS</option>
+            <option value="ABM">ABM</option>
+            <option value="ICT">ICT</option>
+            <option value="HE">HE</option>
+            <option value="SMAW">SMAW</option>
+        </select>
+
+        <label for="photo">Upload a photo of your birth certificate:</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required>
+
+        <button type="submit">Submit</button>  
+    </form>
+    <style>
+body, html
+
+.bg-img {
+    background-image: url("rosalespic.jpg");
+
+    min-height: 1050px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+</style>
+<br><br>
+         <center>
+<button onclick="location.href='mainpage.html'">BACK TO HOME</button>
+</body>
+</html>

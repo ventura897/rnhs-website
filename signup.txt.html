@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up Form</title>
+<style>
+body, html 
+
+.bg-img {
+  background-image: url("rosalespic.jpg");
+
+  min-height: 1050px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+
+<body>
+<center> <br><br><br><br><br><br>
+   <h1 style="color:White;">ROSALES NATIONAL HIGH SCHOOL SENIOR HIGH</h1>  <br><br><br><br><br><br>
+  <h2>PLEASE SIGN UP FIRST</h2>
+  
+  <form action="mainpage.html" method="POST">
+    <label for="firstName">First Name:</label>
+    <input type="text" name="firstName" id="firstName" required><br><br>
+    
+    <label for="lastName">Last Name:</label>
+    <input type="text" name="lastName" id="lastName" required><br><br>
+    
+    <label for="gender">Gender:</label>
+    <input type="radio" name="gender" id="male" value="male" checked>
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="female" value="female">
+    <label for="female">Female</label><br><br>
+    
+    <label for="age">Age:</label>
+<input type="text" id="age" name="age" maxlength="2" size="2" required><br><br>
+    
+    <label for="birthday">Birthday:</label>
+    <input type="date" name="birthday" id="birthday" required><br><br>
+    
+    <label for="email">Email Address:</label>
+    <input type="email" name="email" id="email" required><br><br>
+    
+    <label for="phone">Phone Number:</label>
+    <input type="phone" name="phone number" id="phone number" required>
+     <script>
+      function togglePasswordVisibility() {
+        var passwordInput = document.getElementById("password");
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+        } else {
+          passwordInput.type = "password";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Create New Password</h1>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" />
+
+    <br />
+
+    <input
+      type="checkbox"
+      id="showPassword"
+      name="showPassword"
+      onclick="togglePasswordVisibility()"
+    />
+    <label for="showPassword">Show password</label>
+<br><br>
+ <button type="submit">Log In</button>
+    
+  </form>
+
+
+
+</body>
+</html>
